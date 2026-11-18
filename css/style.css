@@ -1,0 +1,158 @@
+/* RESET PÁGINA */
+ 
+*{
+    margin:0;
+    padding:0;
+}
+
+:root{
+    --borgoña: #7A004B;
+    --lila: #AF98AD;
+    --crema: #F9F3E7;
+}
+
+html { 
+    scroll-behavior: smooth; 
+}
+
+body {
+  margin: 0;
+  font-family: "Merriweather", serif;
+  color: var(--borgoña);
+  background: var(--crema);
+  overflow-x: hidden;
+}
+
+ul { 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+}
+a { 
+    text-decoration: none; 
+    color: inherit; 
+}
+img { 
+    max-width: 100%; 
+    display: block; 
+} 
+
+.container { 
+    width: min(1100px, calc(100% - 2rem)); 
+    margin: 0 auto; 
+} 
+
+/* ENCABEZADO */
+.header-TABBY {
+    position:sticky;
+    top: 0;
+    z-index:100;
+    background-color: var(--crema); /* Cambia por el color de fondo de tu marca */ 
+    border-bottom: 1px solid var(--lila); 
+}
+
+.header-inicio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 76px;
+  gap: 1.5rem;
+}
+
+/* logo imágen*/
+.TABBY-logo {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0; /* Evita que el menú aplaste el logo */
+}
+
+.TABBY-logo img {
+  height: 40px;       /* Ajusta entre 40px y 60px según el diseño de tu logo */
+  width: auto;     
+  max-width: 200px; 
+  object-fit: contain;
+  display: block;
+}
+
+/* Navegación y lista en horizontal */
+.nav-TABBY {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-TABBY ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-TABBY a {
+  text-decoration: none;
+  color: #1f2937;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-TABBY a:hover {
+  color: #AF98AD; /* Color principal de  TU MARCA*/
+}
+
+
+/* Botón de WhatsApp */
+.btn.primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.25rem;
+  border: none;
+  border-radius: 9999px;
+  background-color: var(--lila); /* Ajusta al color de tu marca */
+  color: var(--borgoña); /* Ajusta al color de tu marca */
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+
+.btn.primary:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+
+.btn.primary svg {
+  width: 18px;
+  height: 18px;
+}
+
+
+/* Ajuste básico para celulares */
+@media (max-width: 768px) {
+  .header-inicio {
+    flex-wrap: wrap;
+    padding-block: 0.75rem;
+  }
+
+
+  .nav-TABBY {
+    width: 100%;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+
+  .nav-TABBY ul {
+    gap: 0.85rem;
+    font-size: 0.9rem;
+  }
+}
+
+h1, h2, h3 { 
+    font-family: "Bricolage Grotesque", sans-serif;
+    color: var(--borgoña); 
+    margin: 0;
+ }
