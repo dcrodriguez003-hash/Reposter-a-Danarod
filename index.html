@@ -166,7 +166,7 @@
               <h3>Cupcakes clásicos</h3>
               <p class="price">$35 MXN por pieza</p>
               <p class="description">Vainilla, chocolate, red velvet, zanahoria, plátano, chocolate blanco.</p>
-              <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver producto</button>
+              <button type="button" class="btn card" onclick="openModal('modal-cupcakes')">Ver producto</button>
             </div>
           </article>
 
@@ -178,7 +178,7 @@
               <h3>Galletas</h3>
               <p class="price">$40 MXN por pieza</p>
               <p class="description">Vainilla, Chocolate, Caramelo, Oreo, Red velvet, Chocolate dubái, Coco, Almendra, Matcha, Birthday cake, Kinder bueno, Conejito.</p>
-              <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver producto</button>
+              <button type="button" class="btn card" onclick="openModal('modal-galletas')">Ver producto</button>
             </div>
           </article>
 
@@ -191,7 +191,7 @@
               <h3>Macarrones</h3>
               <p class="price">3 piezas	$90, 6 piezas: $185 MXN, 12 piezas: $260 MXN</p>
               <p class="description">Vainilla, Chocolate, Fresa, Frambuesa, Limón, Cáfe, Nutella, Cajeta, Pistache, Lavanda, Mango, Maracuyá, Mora azul, Arándano.</p>
-              <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver producto</button>
+              <button type="button" class="btn card" onclick="openModal('modal-macarrones')">Ver producto</button>
             </div>
           </article>
 
@@ -325,6 +325,7 @@
             <li><i data-lucide="instagram"></i> <a href="https://www.instagram.com/dana.rodrigueez/" target="_blank" rel="noopener noreferrer">@dana.rodrigueez</a></li>
             <li><i data-lucide="facebook"></i> <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">Tabby Bakery</a></li>
             <li><i data-lucide="mail"></i> <a href="mailto:dc.rodriguez003@ebc.edu.mx">dc.rodriguez003@ebc.edu.mx</a></li>
+            <li><i data-lucide="map"></i> <a href="https://maps.app.goo.gl/EoYvKY6WBGn8jBum7">Cerro de las Campanas No. 98, Col. San Andrés Atenco, Tlalnepantla</a></li>
             <li><i data-lucide="clock-3"></i> Lunes a sábado, 10:00 a 20:00</li>
           </ul>
         </aside>
@@ -341,6 +342,79 @@
     <p>© <span id="current-year"></span> Tabby Bakery & Desserts. Todos los derechos reservados.</p>
     <a href="#inicio">Volver arriba ↑</a>
   </footer>
+
+
+<!-- MODAL PARA LOS PRODUCTOS O SERVICIOS, ETEC-->
+
+ <div id="modal-cupcakes" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-cupcakes-title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/foto6cupcake.jpg" alt="Imagen cupcakes">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-cupcakes')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-cupcakes-title">CUPCAKES PERSONALIZADOS</h2>
+        <p class="price">$35 MXN por pieza</p>
+        <p>Sabores: Vainilla, chocolate, red velvet, zanahoria, plátano, chocolate blanco.</p>
+        <h3>Precios:</h3>
+        <ul>
+          <li>6 cupcakes - $170</li>
+          <li>12 cupcakes	- $330</li>
+          <li>24 cupcakes	- $640</li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero pedir una caja de cupcakes. ¿Me ayudan a personalizarla?')">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+<!-- MODAL TARJETA 2-->
+
+  <div id="modal-galletas" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-galletas-title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/foto4galletas.jpg" alt="Imagen galletas">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-galletas')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-galletas-title">Galletas Personalizadas</h2>
+        <p class="price">$40 MXN por pieza</p>
+        <p>Sabores: Vainilla, Chocolate, Caramelo, Oreo, Red velvet, Chocolate dubái, Coco, Almendra, Matcha, Birthday cake, Kinder bueno, Conejito.</p>
+        <h3>Precios:</h3>
+        <ul>
+          <li>Caja 4 galletas	- $150</li>
+          <li>Caja 6 galletas - $220</li>
+          <li>Caja 12 galletas	- $420</li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero pedir una caja de galletas. ¿Me ayudan a personalizarla?')">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- MODAL TARJETA 3-->
+
+  <div id="modal-macarrones" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-macarrones-title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/foto3macarrones.jpg" alt="Imagen macarrones">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-macarrones')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-macarrones-title">Macarrones</h2>
+        <p class="price">Precio desde $90 MXN</p>
+        <p>Sabores: Vainilla, Chocolate, Fresa, Frambuesa, Limón, Cáfe, Nutella, Cajeta, Pistache, Lavanda, Mango, Maracuyá, Mora azul, Arándano.</p>
+        <h3>Precios:</h3>
+        <ul>
+          <li>3 piezas - $90</li>
+          <li>6 piezas - $185</li>
+          <li>12 piezas - $260</li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero pedir una caja de macarrones. ¿Me ayudan a personalizarla?')">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+
 
   <script src="js/script.js"></script>
 
